@@ -1,7 +1,7 @@
 BestImage Browser
 =================
 
-[![]http://i68.tinypic.com/bjhcnt.jpg(https://git.ask.com/villanuevat/best-image)
+![alt text](http://i68.tinypic.com/bjhcnt.jpg "Best Image Browser")
 
 A user interface for testing out the bestImage module, and to experiment with various alterations to the
 image scoring configuration and algorithm. 
