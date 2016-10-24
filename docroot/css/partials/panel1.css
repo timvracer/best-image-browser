@@ -1,0 +1,67 @@
+
+
+/* --- IMPORT PANEL --- */
+
+
+.closeButton {
+    float: right;
+    margin-right: 3px;
+}
+.p1-input {
+	height: 25px;
+	font-size: 20px;
+	width: 600px;
+	margin-top: 5px;
+}
+.p1-label {
+
+}
+.p1-action-btn {
+	font-style: italic;
+}
+.p1-get-details {
+	color: #002;
+}
+#action-label{
+    margin-left: 10px;
+}
+
+#image-info-container {
+	margin-top: 12px;
+	display: none;
+}
+
+#image-box {
+	margin-top: 20px;
+	margin-right: 20px;
+	height: 150px;
+	width: 250px;
+	background: #aaa;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 150px 250px;
+}
+#image-get-details {
+	font-size: 15px;
+	width: 100px;
+	height: 20px;
+	line-height: 20px;
+	display: inline-block;
+	vertical-align: top;
+	background: 
+}
+#image-info {
+	display: block;
+	vertical-align: top;
+	margin-top: 10px;
+    margin-top: 10px;
+    border: solid;
+    border-width: 0px;
+    padding: 5px;
+    box-shadow: #555 0px 1px 2px;
+}
+
+#fld-url, #img-stats{
+	display: inline-block;
+	margin: 0;
+}

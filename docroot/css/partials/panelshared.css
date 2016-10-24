@@ -1,0 +1,98 @@
+
+
+/* --- PANELS SHARED CSS --- */
+.select-container {
+	padding: 20px;
+	width: 90%;
+  	font-size: 16px;
+  	text-align: center;
+  	margin: auto;
+  	margin-top: 20px;
+  	background-color: white;
+	margin-bottom: 50px;	
+}
+
+.type-selector {
+	margin-left: 10px;
+}
+
+.input-container {
+	margin-bottom: 25px;
+}
+.header-select-table {
+	display: inline-block;
+	padding: 6px;
+}
+.header-select-container {
+	overflow-x: scroll;	
+	border: solid;
+	padding-bottom: 10px;
+	background-color: #f1f1f1;
+}
+.action-btn {
+	background: #55aa99;
+	margin-top: 25px;
+    border: solid;
+    display: block;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+.action-btn p {
+	margin: 0;
+	color: white;
+}
+.action-btn:hover {
+	background: #66bbaa;
+}
+.action-btn:active {
+	background: #338877;
+}
+
+.header-select-box {
+	margin-top: 20px;
+}
+
+.header-select-box table {
+	margin: auto;
+}
+.prop-selector, .hdr-prop-selector{
+	min-width: 100px;
+}
+.fl{
+    float: left;
+}
+.ml15{
+    margin-left: 15px;
+}
+.cb{
+    clear:both;
+}
+.contentPanel{
+    width: 55%;
+    margin: 0 auto;
+    text-align: left;
+}
+.a-btn{
+    color: #ffffff;
+    text-decoration: none;
+}
+.mb10{margin-bottom: 10px;}
+.mt10{margin-top: 10px;}
+
+.hdr1 {
+	font-size: 20px;
+	font-weight: bold;
+}
+.input-box {
+	font-size: 20px;
+	width: 100%;
+	max-width: 100%;
+}
+.chk-anon {
+	margin-top: 15px;
+}
+#chk-anon-label {
+	font-size: 17px;
+}

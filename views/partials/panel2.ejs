@@ -1,0 +1,42 @@
+<!-- Export Panel 
+	NOTE: This div is placed inside the "export-select-container" div defined in node side exportpanel.ejs
+-->	
+
+<div id = "panel2" class = "mpanel mphide">
+	<div id="export-select-container" class="select-container">
+        <div class="contentPanel">
+        	<p class="instructions">
+        		<%=config.instructions%>
+
+			<div class="spacer"></div>
+			<div class="p2-report-header">
+				<div class="p2-rpthdr-text">
+					<a class="urlhdr-link" href="" target="_blank">
+						<p class="rpt-overview urlhdr"> </p>
+					</a>	
+					<p class="rpt-overview queryhdr"> </p>
+					<p class="rpt-overview doctitle"> </p>
+					<span class="p3-alt-notifications">
+						<%if (session.scoringFunction) { %>
+							<a href="#panel3">
+								<b> Alternative Scoring Algorithm Used </b>
+							</a>	
+						<%}%>
+						<%if (session.scoringConfig) { %>
+							<a href="#panel4">
+								<b> Alternative Scoring Config Used </b>
+							</a>	
+						<%}%>
+					</span>	
+				</div>
+				<div id="p2-score" class="action-btn p2-score-btn"> Edit Algorithm </div>
+				<div id="p2-score-config" class="action-btn p2-score-btn"> Edit Config </div>
+			</div>
+			<div class="spacer"></div>
+			<div class="p2-report-body">
+			</div>
+
+		</div>	
+    </div>
+</div>
+

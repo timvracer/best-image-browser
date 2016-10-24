@@ -1,0 +1,102 @@
+
+/* --- PANEL COMMON ---*/
+
+.mphide {
+	display: none;
+}
+.mpanel {
+	margin-bottom: 30px;
+}
+.added {  
+  -webkit-animation: appear 1s;
+  -webkit-animation-fill-mode: backwards; 
+  animation: appear 1s;
+  animation-fill-mode: backwards;
+}
+.removed {  
+  -webkit-animation: disapear 1s;
+  -webkit-animation-fill-mode: forwards; 
+  animation: disapear 1s;
+  animation-fill-mode: forwards;
+}
+.spacer {
+	height: 1px;
+	background-color: #2F4F4F;
+}
+
+/* --- EXPORT PANEL --- */
+
+
+/* --- REPORTS PANEL --- */
+
+
+/* --- ANIMATIONS ---- */
+@-webkit-keyframes disapear{ 
+
+  50% {
+    
+    -webkit-transform: translateX(-5%);
+    transform: translateX(-5%);
+  }
+  
+  100% {
+    -webkit-transform: translateX(200%);
+    transform: translateX(200%); 
+  }    
+}
+
+@keyframes disapear{
+  
+  50% {
+    
+    -webkit-transform: translateX(-5%);
+    transform: translateX(-5%);
+  }
+  
+  100% {
+    -webkit-transform: translateX(200%);
+    transform: translateX(200%); 
+  }    
+}
+@-webkit-keyframes appear{ 
+ 	0% {
+    	-webkit-transform: translateX(-200%);
+    	transform: translateX(-200%);
+  	}
+  	50% {
+    
+    	-webkit-transform: translateX(5%);
+    	transform: translateX(5%);
+  	}
+  	75% {
+    
+    	-webkit-transform: translateX(-2%);
+    	transform: translateX(-2%);
+  	}
+  	100% {
+    	-webkit-transform: translateX(0%);
+    	transform: translateX(0%); 
+  	}    
+}
+
+@keyframes appear{
+ 	0% {
+    	-webkit-transform: translateX(-200%);
+    	transform: translateX(-200%);
+  	}
+  	50% {
+    
+    	-webkit-transform: translateX(5%);
+    	transform: translateX(5%);
+  	}
+  	75% {
+    
+    	-webkit-transform: translateX(-2%);
+    	transform: translateX(-2%);
+  	}
+  	100% {
+    	-webkit-transform: translateX(0%);
+    	transform: translateX(0%); 
+  	}    
+}
+

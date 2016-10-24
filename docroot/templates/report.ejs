@@ -1,0 +1,114 @@
+<!-- Pass in array data[{type: type, user: user, submission: submission}, {...}, {...}]
+-->
+
+<div id = "submissions-report">
+	<table id="rpt-table">
+		<tr id="rpt-colhdrs">
+			<td> Image </td>
+			<td class="spacer-column"> </td>
+			<td> Data </td>
+		</tr>
+
+		<%  for(var i=0; i<imgArray.length; i++) { var item=imgArray[i]%>
+			<tr dbid="<%=i%>" class="rpt-row <% if (i%2==0) { %> even-row <% } %>">
+				<td class="rpt-cell id-image">
+					<a href="<%=item.src%>" target="_blank">
+						<img class="table-image" src="<%=item.src%>"></img> </td>
+					</a>	
+				<td class="spacer-column"></td>
+				<td class="rpt-data-cell"> 
+					<table id="subtable-<%=i%>">
+						<tr>
+							<td class="data-tbl-label data-score"> Score: </td> <td class="data-score"> <%=item.score%> </td>
+						</tr>
+						<tr>
+							<td class="data-tbl-label data-size-score"> Size: </td> <td class="data-score"> <%=item.sizeScore%> </td>
+						</tr>
+						<tr>
+							<td class="data-tbl-label"> isMeta: </td> <td> <%=item.isMeta%> </td>
+						</tr>
+						<tr>
+							<td class="data-tbl-label"> src: </td> 
+							<td>
+								<a href="<%=item.src%>" target="_blank"> <%=item.src%> </a>
+							</td>		
+						</tr>
+						<tr>
+							<td class="data-tbl-label"> alt: </td> <td> <%=item.attribs.alt%> </td>
+						</tr>
+						<tr>
+							<td class="data-tbl-label"> title: </td> <td> <%=item.attribs.title%> </td>
+						</tr>
+						<tr>
+							<td class="data-tbl-label"> class: </td> <td> <%=item.attribs.class%> </td>
+						</tr>
+						<tr>
+							<td class="data-tbl-label"> queryScore: </td> <td> <%=item.queryScore%> </td>
+						</tr>
+						<tr>
+							<td class="data-tbl-label"> titleScore: </td> <td> <%=item.titleScore%> </td>
+						</tr>
+						<tr>
+							<td class="data-tbl-label"> rdiff: </td> <td> <%=item.rdiff%> </td>
+						</tr>
+						<tr>
+							<td class="data-tbl-label"> surfaceArea: </td> <td> <%=item.surfaceArea%> </td>
+						</tr>
+						<tr>
+							<td class="data-tbl-label"> sdiff: </td> <td> <%=item.sdiff%> </td>
+						</tr>
+						<tr>
+							<td class="data-tbl-label"> sdiffRaw: </td> <td> <%=item.sdiffRaw%> </td>
+						</tr>
+						<tr>
+							<td class="data-tbl-label"> badWords: </td> <td> <%=item.badWords%> | <%=item.badFnameWords%> </td>
+						</tr>
+						<tr>
+							<td class="data-tbl-label"> goodWords: </td> <td> <%=item.goodWords%> </td>
+						</tr>
+
+					</table>
+				</td>
+			</tr>
+		<% } %>	
+			<tr> <td> Full Results </td> <td>  </td> </tr>
+		<%  for(i=0; i<imgArray2.length; i++) { var item=imgArray2[i]; if(item) { %>
+			<tr dbid="sub-<%=i%>" class="rpt-row <% if (i%2==0) { %> even-row <% } %>">
+				<td class="rpt-cell id-image">
+					<a href="<%=item.src%>" target="_blank">
+						<img class="table-image" src="<%=item.src%>"></img> </td>
+					</a>	
+				<td class="spacer-column"></td>
+				<td class="rpt-data-cell"> 
+					<table id="subtable2-<%=i%>">
+						<tr>
+							<td class="data-tbl-label data-score"> Score: </td> <td class="data-score"> <%=item.score%> </td>
+						</tr>
+						<tr>
+							<td class="data-tbl-label"> isMeta: </td> <td> <%=item.isMeta%> </td>
+						</tr>
+						<tr>
+							<td class="data-tbl-label"> src: </td> 
+							<td>
+								<a href="<%=item.src%>" target="_blank"> <%=item.src%> </a>
+							</td>		
+						</tr>
+						<tr>
+							<td class="data-tbl-label"> alt: </td> <td> <%=item.attribs.alt%> </td>
+						</tr>
+						<tr>
+							<td class="data-tbl-label"> title: </td> <td> <%=item.attribs.title%> </td>
+						</tr>
+						<tr>
+							<td class="data-tbl-label"> class: </td> <td> <%=item.attribs.class%> </td>
+						</tr>
+
+					</table>
+				</td>
+			</tr>
+		<% }} %>	
+
+
+
+	</table>
+</div>

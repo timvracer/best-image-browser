@@ -1,0 +1,19 @@
+<!-- Export Panel 
+	NOTE: This div is placed inside the "export-select-container" div defined in node side exportpanel.ejs
+-->	
+
+<div id = "panel3" class = "mpanel mphide">
+	<p id="p3-title"> Edit full scoring algorithm </p>
+	<div id="p3-buttons">
+		<span id="p3-submit" class="action-btn p3-hdr-btn"> Validate Algorithm </span>
+		<span id="p3-cancel" class="action-btn p3-hdr-btn"> Return </span>
+		<span id="p3-reset" class="action-btn p3-reset-btn <% if (!session.scoringFunction) {%>p3-hide<%}%>"> Reset Code </span>
+		<span id="p3-download" class="action-btn p3-download-btn <% if (!session.scoringFunction) {%>p3-hide<%}%>"> Download Code </span>
+	</div>
+	<span id="p3-revert" class="action-btn p3-hdr-btn"> Revert </span>
+			
+	<div id="editor"><% if (session.scoringFunction) { %><%=session.scoringFunction%><%} else {%><% include ../partials/score-function %>
+<%}%></div>
+	    
+</div>
+

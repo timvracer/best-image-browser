@@ -1,0 +1,27 @@
+
+development:
+  # minutes of idle time (no server access) before a session expires
+  sessionTimeout: 30 
+
+  appName: "Best Image Browser"
+
+  # Do we require a login to submit feedback?  If this is set to false, then if user is not authenticated
+  # an anonymous login is created with user role of -user- and name "anonymous"
+  requireAuth: false
+
+  # host to listen (localhost by default since we expect a reverse proxy for HTTPS)
+  # omit entirely to bind all interfaces
+  #  serverHost: localhost
+
+  # port to listen on for the node server
+  serverPort: 3000
+
+  # socket port
+  socketPort: 3001
+
+  # Directory path relevant to node server where the web document tree lives
+  docroot: "/docroot/"
+
+  instructions: ""
+###################################
+

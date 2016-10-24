@@ -1,0 +1,19 @@
+<!-- Export Panel 
+	NOTE: This div is placed inside the "export-select-container" div defined in node side exportpanel.ejs
+-->	
+
+<div id = "panel4" class = "mpanel mphide">
+	<p id="p4-title"> Edit Score Config (json)</p>
+	<div id="p4-buttons">
+		<span id="p4-submit" class="action-btn p4-hdr-btn"> Validate JSON </span>
+		<span id="p4-cancel" class="action-btn p4-hdr-btn"> Return </span>
+		<span id="p4-reset" class="action-btn p4-reset-btn <% if (!session.scoringConfig) {%>p4-hide<%}%>"> Reset Code </span>
+		<span id="p4-download" class="action-btn p4-download-btn <% if (!session.scoringConfig) {%>p4-hide<%}%>"> Download Code </span>
+	</div>
+	<span id="p4-revert" class="action-btn p4-hdr-btn"> Revert </span>
+			
+	<div id="p4-editor"><% if (session.scoringConfig) { %><%=session.scoringConfig%><%} else {%><% include ../partials/score-config %>
+<%}%></div>
+	    
+</div>
+

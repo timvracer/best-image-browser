@@ -1,0 +1,63 @@
+
+
+/* --- PANEL 3  --- */
+#p3-title {
+    text-align: left;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+#editor { 
+    position: relative;
+    height: 700px;
+    width: 1024px;
+    margin-left: 50px;
+}
+#panel3 {
+	width: 1074px;
+}
+#p3-submit {
+	color: white;
+}
+.p3-hdr-btn {
+	display: inline-block;
+    border-color: #2F4F4F;
+    margin: 0;
+}
+#p3-buttons {
+    margin-bottom: 6px;
+    text-align: left;
+    margin-left: 50px;
+    float: left;
+}
+#p3-revert, .p3-reset-btn, .p3-download-btn {
+	margin-top: 25px;
+	border-width: 1px;
+    height: 20px;
+    width: 60px;
+    line-height: 20px;
+    font-size: 13px;
+    padding: 0;
+}
+#p3-revert {
+    float: right;
+    color: #EEEE00;
+    display: none;
+}
+.p3-reset-btn {
+	width: 120px;
+	display: inline-block;
+	vertical-align: bottom;
+	margin-left: 20px;
+	background: #880000;
+	color: white;
+}
+.p3-download-btn {
+	width: 120px;
+	display: inline-block;
+	vertical-align: bottom;
+	margin-left: 5px;
+}
+.p3-hide {
+	display: none;
+}

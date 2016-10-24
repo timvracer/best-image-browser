@@ -1,0 +1,31 @@
+body{
+    background: #f1f1f1;
+    color: #2F4F4F;
+	margin: 0; 
+	padding: 0;
+	font-family:Helvetica, Helvetica Neue,Arial,sans-serif, 'Roboto Condensed',serif;
+	/*background-image: url('../assets/ptn1.gif');*/
+	/*background-repeat: tile;*/
+}
+
+.action-btn {
+	cursor: pointer;
+}
+
+#menu-links {
+	font-size: 14px;
+	color: #2F4F4F;
+    font-family:Helvetica, Helvetica Neue;
+}
+
+#workspace {
+	text-align: center;
+	margin-top: 15px;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+.al:link {color: #2F4F4F; text-decoration: none}
+.al:visited {color: #2F4F4F; text-decoration: none}
+.al:hover {color: #AAAAFF; text-decoration: none}
+.al:active {color: #000000; text-decoration: none}
+

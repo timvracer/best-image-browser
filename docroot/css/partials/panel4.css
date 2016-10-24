@@ -1,0 +1,64 @@
+
+
+/* --- PANEL 3  --- */
+#p4-title {
+    text-align: left;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+#p4-editor { 
+    position: relative;
+    height: 700px;
+    width: 1024px;
+    margin-left: 50px;
+    display: none;
+}
+#panel4 {
+	width: 1074px;
+}
+#p4-submit {
+	color: white;
+}
+.p4-hdr-btn {
+	display: inline-block;
+    border-color: #2F4F4F;
+    margin: 0;
+}
+#p4-buttons {
+    margin-bottom: 6px;
+    text-align: left;
+    margin-left: 50px;
+    float: left;
+}
+#p4-revert, .p4-reset-btn, .p4-download-btn {
+	margin-top: 25px;
+	border-width: 1px;
+    height: 20px;
+    width: 60px;
+    line-height: 20px;
+    font-size: 13px;
+    padding: 0;
+}
+#p4-revert {
+    float: right;
+    color: #EEEE00;
+    display: none;
+}
+.p4-reset-btn {
+	width: 120px;
+	display: inline-block;
+	vertical-align: bottom;
+	margin-left: 20px;
+	background: #880000;
+	color: white;
+}
+.p4-download-btn {
+	width: 120px;
+	display: inline-block;
+	vertical-align: bottom;
+	margin-left: 5px;
+}
+.p4-hide {
+	display: none;
+}

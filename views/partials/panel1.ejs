@@ -1,0 +1,39 @@
+<!-- Import Panel 
+	NOTE: This div is placed inside the "file-select-container" div defined in node side exportpanel.ejs
+-->	
+
+<div id = "panel1" class = "mpanel mphide">
+	Welcome to: <%=config.appName%><br>
+	Examine Page
+
+	<div id="file-select-container" class="select-container" >
+        <div class="contentPanel">
+        	<p class="instructions">
+        		<%=config.instructions%>
+			<div class="spacer"></div>
+			<p class="p1-label query-label"> Enter a relevant query to use in finding the image (optional) </p>
+			<input type="text" class="p1-input querybox"> </input>
+			<p class="p1-label url-label"> Enter the URL of the page to examine: </p>
+			<input type="text" class="p1-input urlbox"> </input>
+
+			<div id="question-submit" class="action-btn p1-action-btn"> <p>Best Image!</p> </div>
+
+			<div id="image-info-container">
+				<div class="spacer"></div>
+				<img id="image-box"> </img>
+				<span id="image-get-details" class="action-btn p1-get-details"> Show All</span>
+				<span id="image-info">
+					URL:
+					<a id="fld-url-link" href="#" target="_blank">
+						<p id="fld-url"> </p>
+					</a>
+					<br>
+					STATS:&nbsp&nbsp
+					<p id="img-stats"> </p>
+				</span>	
+			</div>
+		</div>	
+	</div>
+
+</div>
+

@@ -1,0 +1,82 @@
+
+
+/* --- EXPORT PANEL --- */
+#export-title {
+	text-align: left;
+	margin: 0 0 8px 0;
+	font-size: 18px;
+}
+
+.p3-alt-notifications a {
+	margin-right: 10px;
+}
+
+#export-select-container{
+    min-height: 104px;
+}
+#export-batch-comment-div{
+    margin-left: 19px;
+}
+.ml-adjust{
+    margin-left: -10px;
+}
+
+.rpt-overview {
+	margin: 2px 0 0 0;
+}
+
+#panel2 .select-container .contentPanel {
+	width: 85%;
+}
+#rpt-table {
+	display: block;
+	border: solid;
+	border-color: black;
+	padding: 10px;
+	word-break: break-all;
+}
+#rpt-table tbody {
+	display: block;
+}
+
+.table-image {
+	max-width: 400px;
+}
+.id-image {
+	width: 400px;
+}
+.spacer-column {
+	width: 7px;
+	display: block;
+}
+#rpt-colhdrs {
+	height: 58px;
+	font-size: 26px;
+}
+.data-tbl-label {
+	font-weight: bold;
+	width: 100px;
+}
+.data-score {
+	font-size: 20px;
+}
+.p2-report-header {
+	background-color: #EEF;
+	height: 80px;
+}
+.p2-rpthdr-text {
+	float: left;
+	width: 73%;
+	margin-left: 5px;
+}
+.p2-score-btn {
+	float: right;
+	margin: 5px 5px 0 0;
+	height: 20px;
+    line-height: 20px;
+    font-size: 15px;
+    padding: 2px;
+}
+.even-row {
+	background: #eee;
+}
