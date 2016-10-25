@@ -50,39 +50,11 @@ function(imgArray) {
  ```
 
 *Usage:*
-```
-BestImage.getBestImageAlt(documentUrl, query, function(imgArray){}, function(err, imgSrc) {});
-
-```
-
-###getBestImageFromDocument
-
-Same as getBestImage except it does not retrieve the document via HTTP, but rather uses the HTML document passed in.  the fullUrl paramater
-is simply used for logging.
-
-Returns the src tag (to be used in an <img> tag, or as a paramater to url() in a background-image css tag) of the best image
-found on the given document.  Returns null and an error if not image was found.
-
-Note, this is an asyncronous call, and can take a material amount of time depending on the speed of the site being crawled.
-
-*Usage:*
-```
-BestImage.getBestImageFromDocument(htmlDocument, query, function(err, imgSrc) {});
-
-```
 
 ## Installation
 
-  npm install best-image
+  npm install best-image-browser
 
-## Tests
-
-Tests are located in best-image_test.js.  You will need mocha installed, and set the node environment to "test".  
-Run the tests from the shell with
-
-```
-NODE_ENV='test' mocha test/best-image_test.js --reporter spec
-```
 
 ## License
 
